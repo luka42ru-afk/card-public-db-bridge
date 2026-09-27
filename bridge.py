@@ -1,11 +1,13 @@
 import json
 import os
 import re
-import stat
 import subprocess
 import sys
 import tempfile
+import urllib.error
+import urllib.parse
 import urllib.request
+import zipfile
 from pathlib import Path
 
 ALLOWED_MODES = {"deploy"}
@@ -49,7 +51,7 @@ def safe_relative_path(value):
     return value
 
 
-def clone_source(config, directory):
+def download_source(config, directory):
     source = config.get("source") if isinstance(config.get("source"), dict) else {}
     repository = safe_repo(source.get("repository"))
     ref = safe_ref(source.get("ref") or "main")
@@ -57,42 +59,59 @@ def clone_source(config, directory):
     if not token:
         fail("source access configuration is missing")
 
-    askpass = Path(directory) / "askpass.sh"
-    askpass.write_text(
-        "#!/bin/sh\n"
-        "case \"$1\" in\n"
-        "  *Username*) printf '%s\\n' 'x-access-token' ;;\n"
-        "  *) printf '%s\\n' \"$BRIDGE_SOURCE_TOKEN\" ;;\n"
-        "esac\n",
-        encoding="utf-8",
-    )
-    askpass.chmod(askpass.stat().st_mode | stat.S_IXUSR)
-
+    archive_path = Path(directory) / "source.zip"
     source_dir = Path(directory) / "source"
-    env = os.environ.copy()
-    env["GIT_ASKPASS"] = str(askpass)
-    env["GIT_TERMINAL_PROMPT"] = "0"
-    env["BRIDGE_SOURCE_TOKEN"] = token
+    source_dir.mkdir(parents=True, exist_ok=True)
 
-    result = subprocess.run(
-        [
-            "git",
-            "clone",
-            "--quiet",
-            "--depth",
-            "1",
-            "--branch",
-            ref,
-            f"https://github.com/{repository}.git",
-            str(source_dir),
-        ],
-        env=env,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
+    url = (
+        "https://api.github.com/repos/"
+        + repository
+        + "/zipball/"
+        + urllib.parse.quote(ref, safe="")
     )
-    if result.returncode != 0:
-        fail("source checkout failed")
+    req = urllib.request.Request(
+        url,
+        headers={
+            "Authorization": "Bearer " + token,
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": "public-bridge/3.0",
+        },
+        method="GET",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=45) as response:
+            archive_path.write_bytes(response.read())
+    except urllib.error.HTTPError as exc:
+        if exc.code in (401, 403, 404):
+            fail("source access denied")
+        fail("source download failed")
+    except Exception:
+        fail("source download failed")
+
+    try:
+        with zipfile.ZipFile(archive_path) as archive:
+            for info in archive.infolist():
+                name = info.filename.replace("\\", "/")
+                parts = [part for part in name.split("/") if part]
+                if len(parts) <= 1 or info.is_dir():
+                    continue
+                relative = "/".join(parts[1:])
+                if relative.startswith("../") or "/../" in relative or relative.startswith("/"):
+                    fail("source archive is invalid")
+                target = source_dir / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                with archive.open(info) as src, target.open("wb") as dst:
+                    while True:
+                        chunk = src.read(1024 * 1024)
+                        if not chunk:
+                            break
+                        dst.write(chunk)
+    except SystemExit:
+        raise
+    except Exception:
+        fail("source archive is invalid")
 
     return source_dir, source
 
@@ -108,15 +127,11 @@ def deploy_source(config, source_dir, source):
     if not script_path.is_file():
         fail("deploy command is not available")
 
-    listed = subprocess.run(
-        ["git", "ls-files"],
-        cwd=source_dir,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-    )
-    if listed.returncode != 0:
-        fail("source file listing failed")
+    file_list = []
+    for path in source_dir.rglob("*"):
+        if path.is_file():
+            file_list.append(path.relative_to(source_dir).as_posix())
+    file_list.sort()
 
     env = os.environ.copy()
     env.update(
@@ -134,7 +149,7 @@ def deploy_source(config, source_dir, source):
         ["python3", str(script_path)],
         cwd=source_dir,
         env=env,
-        input=listed.stdout,
+        input="\n".join(file_list) + "\n",
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
@@ -158,7 +173,7 @@ def verify_deploy(config):
     try:
         req = urllib.request.Request(
             url,
-            headers={"User-Agent": "public-bridge/2.0", "Cache-Control": "no-cache"},
+            headers={"User-Agent": "public-bridge/3.0", "Cache-Control": "no-cache"},
             method="GET",
         )
         with urllib.request.urlopen(req, timeout=30) as response:
@@ -181,7 +196,7 @@ def main():
     config = load_config()
 
     with tempfile.TemporaryDirectory(prefix="bridge-") as directory:
-        source_dir, source = clone_source(config, directory)
+        source_dir, source = download_source(config, directory)
         deploy_source(config, source_dir, source)
         verify_deploy(config)
 
