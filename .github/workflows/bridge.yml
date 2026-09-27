@@ -1,6 +1,10 @@
 name: Mining v49 bridge
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - command.json
   workflow_dispatch:
     inputs:
       action:
@@ -22,10 +26,36 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Resolve and validate action
+        id: action
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            ACTION="${{ inputs.action }}"
+          else
+            ACTION="$(python3 -c "import json; print(json.load(open('command.json', encoding='utf-8')).get('action',''))")"
+          fi
+          case "$ACTION" in
+            inspect_mine_v49|apply_mine_v49) ;;
+            *) echo "::error::Unsupported action"; exit 1 ;;
+          esac
+          echo "value=$ACTION" >> "$GITHUB_OUTPUT"
+
+      - name: Check bridge secret
+        env:
+          CARD_MINE_ENDPOINT: ${{ secrets.CARD_MINE_ENDPOINT }}
+        run: |
+          set -euo pipefail
+          if [ -z "$CARD_MINE_ENDPOINT" ]; then
+            echo "::error::CARD_MINE_ENDPOINT secret is not configured"
+            exit 1
+          fi
+
       - name: Run controlled Mining bridge
         env:
           CARD_MINE_ENDPOINT: ${{ secrets.CARD_MINE_ENDPOINT }}
-          BRIDGE_ACTION: ${{ inputs.action }}
+          BRIDGE_ACTION: ${{ steps.action.outputs.value }}
         run: |
           set -euo pipefail
           python3 bridge.py "$BRIDGE_ACTION" result.json
@@ -36,5 +66,5 @@ jobs:
         with:
           name: mining-v49-result
           path: result.json
-          if-no-files-found: error
+          if-no-files-found: ignore
           retention-days: 1
