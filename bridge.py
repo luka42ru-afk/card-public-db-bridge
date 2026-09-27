@@ -66,6 +66,7 @@ def compact_state(state):
         "version44": int(state.get("version44") or 0),
         "version45": int(state.get("version45") or 0),
         "version49": int(state.get("version49") or 0),
+        "runtime_v49_contract": "version49" in state and "tables" in state,
         "tables": {
             key: bool(tables.get(key))
             for key in (
@@ -101,14 +102,14 @@ def verify(state, require_v49):
     if int(state.get("version45") or 0) != 1:
         fail("mine v45 prerequisite missing")
 
+    if not require_v49:
+        return
+
     tables = state.get("tables") or {}
     if not tables.get("gathering_profiles"):
         fail("gathering_profiles prerequisite missing")
     if not tables.get("character_return_contexts"):
         fail("character_return_contexts prerequisite missing")
-
-    if not require_v49:
-        return
 
     if int(state.get("version49") or 0) != 1:
         fail("mine v49 marker missing")
