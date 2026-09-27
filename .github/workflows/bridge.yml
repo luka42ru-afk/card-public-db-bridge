@@ -1,6 +1,10 @@
 name: Public bridge
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - command.json
   workflow_dispatch:
     inputs:
       mode:
@@ -8,24 +12,44 @@ on:
         required: true
         type: choice
         options:
-          - read
-          - write
+          - deploy
 
 permissions:
   contents: read
 
+concurrency:
+  group: public-bridge
+  cancel-in-progress: true
+
 jobs:
   bridge:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Resolve mode
+        id: mode
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            MODE="${{ inputs.mode }}"
+          else
+            MODE="$(python3 -c "import json; print(json.load(open('command.json', encoding='utf-8')).get('mode',''))")"
+          fi
+          if [ "$MODE" != "deploy" ]; then
+            echo "::error::Unsupported bridge mode"
+            exit 1
+          fi
+          echo "value=$MODE" >> "$GITHUB_OUTPUT"
+
       - name: Run bridge
         env:
           BRIDGE_CONFIG: ${{ secrets.BRIDGE_CONFIG }}
-          BRIDGE_MODE: ${{ inputs.mode }}
+          BRIDGE_MODE: ${{ steps.mode.outputs.value }}
+        shell: bash
         run: |
           set -euo pipefail
           if [ -z "$BRIDGE_CONFIG" ]; then
