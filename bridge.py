@@ -10,7 +10,7 @@ import urllib.request
 import zipfile
 from pathlib import Path
 
-ALLOWED_MODES = {"deploy"}
+ALLOWED_MODES = {"deploy", "operate"}
 
 
 def fail(message):
@@ -162,6 +162,45 @@ def deploy_source(config, source_dir, source):
         fail("deployment failed")
 
 
+def operate_source(source_dir):
+    descriptor = source_dir / ".deploy" / "public_bridge_command.json"
+    if not descriptor.is_file():
+        fail("private operation descriptor is not available")
+
+    try:
+        command = json.loads(descriptor.read_text(encoding="utf-8"))
+    except Exception:
+        fail("private operation descriptor is invalid")
+    if not isinstance(command, dict):
+        fail("private operation descriptor is invalid")
+
+    handler = str(command.get("handler") or "").strip()
+    if not re.fullmatch(r"[A-Za-z0-9_.-]+_bridge\.py", handler):
+        fail("private operation handler is invalid")
+
+    handler_path = source_dir / ".github" / "db-bridge" / handler
+    if not handler_path.is_file():
+        fail("private operation handler is not available")
+
+    result_path = source_dir / ".bridge-operation-result.json"
+    result = subprocess.run(
+        ["python3", str(handler_path), str(descriptor), str(result_path)],
+        cwd=source_dir,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    if result.returncode != 0:
+        fail("private operation failed")
+
+    try:
+        payload = json.loads(result_path.read_text(encoding="utf-8"))
+    except Exception:
+        fail("private operation verification is unavailable")
+    if not isinstance(payload, dict) or payload.get("verified") is not True:
+        fail("private operation verification failed")
+
+
 def verify_deploy(config):
     verify = config.get("verify")
     if not isinstance(verify, dict):
@@ -201,8 +240,11 @@ def main():
 
     with tempfile.TemporaryDirectory(prefix="bridge-") as directory:
         source_dir, source = download_source(config, directory)
-        deploy_source(config, source_dir, source)
-        verify_deploy(config)
+        if mode == "deploy":
+            deploy_source(config, source_dir, source)
+            verify_deploy(config)
+        else:
+            operate_source(source_dir)
 
     print("bridge operation succeeded")
 
