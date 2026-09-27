@@ -83,12 +83,16 @@ def download_source(config, directory):
     try:
         with urllib.request.urlopen(req, timeout=45) as response:
             archive_path.write_bytes(response.read())
+    except UnicodeEncodeError:
+        fail("source token format is invalid")
     except urllib.error.HTTPError as exc:
         if exc.code in (401, 403, 404):
-            fail("source access denied")
-        fail("source download failed")
-    except Exception:
-        fail("source download failed")
+            fail("source access denied (http " + str(exc.code) + ")")
+        fail("source download failed (http " + str(exc.code) + ")")
+    except urllib.error.URLError:
+        fail("source network request failed")
+    except Exception as exc:
+        fail("source download failed (" + type(exc).__name__ + ")")
 
     try:
         with zipfile.ZipFile(archive_path) as archive:
