@@ -1,0 +1,40 @@
+name: Mining v49 bridge
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Mining v49 action
+        required: true
+        type: choice
+        options:
+          - inspect_mine_v49
+          - apply_mine_v49
+
+permissions:
+  contents: read
+
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run controlled Mining bridge
+        env:
+          CARD_MINE_ENDPOINT: ${{ secrets.CARD_MINE_ENDPOINT }}
+          BRIDGE_ACTION: ${{ inputs.action }}
+        run: |
+          set -euo pipefail
+          python3 bridge.py "$BRIDGE_ACTION" result.json
+
+      - name: Upload safe result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mining-v49-result
+          path: result.json
+          if-no-files-found: error
+          retention-days: 1
