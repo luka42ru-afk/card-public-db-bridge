@@ -1,9 +1,5 @@
 {
-  "request_id": "deploy-treant-adaptive-v56-runtime-20260929",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_paths": [
-    "www/lumberyardTreantFeature.php",
-    "libs/lumberyard_treant_adaptive_v56_data.php"
-  ]
+  "request_id": "operate-treant-adaptive-v56-preapply-20260929",
+  "mode": "operate",
+  "source_ref": "develop"
 }
