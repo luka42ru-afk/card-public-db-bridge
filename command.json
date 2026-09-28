@@ -1,5 +1,5 @@
 {
-  "request_id": "operate-treant-adaptive-v56-postverify-20260929",
-  "mode": "operate",
+  "request_id": "deploy-develop-20260929-inventory-refresh",
+  "mode": "deploy",
   "source_ref": "develop"
 }
