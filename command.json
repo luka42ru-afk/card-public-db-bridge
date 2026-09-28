@@ -1,14 +1,5 @@
 {
-  "request_id": "deploy-feed-filter-settings-20260929",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_paths": [
-    "js/game_settings.js",
-    "js/inventory.js",
-    "js/effect_popup.js",
-    "js/effect_popup.original.js",
-    "www/main.php",
-    "www/EffectsSystem.php",
-    "www/possessionAction.php"
-  ]
+  "request_id": "operate-post-feed-filter-settings-20260929",
+  "mode": "operate",
+  "source_ref": "develop"
 }
