@@ -1,5 +1,10 @@
 {
-  "request_id": "deploy-recipe-resources-always-clickable-20260928",
+  "request_id": "deploy-recipe-resources-targeted-20260928",
   "mode": "deploy",
-  "source_ref": "develop"
+  "source_ref": "develop",
+  "deploy_paths": [
+    "www/inventory.php",
+    "js/inventory.js",
+    "www/main.php"
+  ]
 }
