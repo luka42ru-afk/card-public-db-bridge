@@ -51,10 +51,23 @@ def safe_relative_path(value):
     return value
 
 
-def download_source(config, directory):
+def load_command():
+    path = Path("command.json")
+    if not path.is_file():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        fail("bridge command is invalid")
+    if not isinstance(data, dict):
+        fail("bridge command is invalid")
+    return data
+
+
+def download_source(config, directory, ref_override=None):
     source = config.get("source") if isinstance(config.get("source"), dict) else {}
     repository = safe_repo(source.get("repository"))
-    ref = safe_ref(source.get("ref") or "main")
+    ref = safe_ref(ref_override or source.get("ref") or "main")
     token = str(source.get("token") or "").strip()
     if not token:
         fail("source access configuration is missing")
@@ -237,9 +250,13 @@ def main():
         fail("unsupported mode")
 
     config = load_config()
+    command = load_command()
+    source_ref = command.get("source_ref")
+    if source_ref is not None:
+        source_ref = safe_ref(source_ref)
 
     with tempfile.TemporaryDirectory(prefix="bridge-") as directory:
-        source_dir, source = download_source(config, directory)
+        source_dir, source = download_source(config, directory, source_ref)
         if mode == "deploy":
             deploy_source(config, source_dir, source)
             verify_deploy(config)
