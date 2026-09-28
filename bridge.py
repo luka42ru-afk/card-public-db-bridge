@@ -133,7 +133,7 @@ def download_source(config, directory, ref_override=None):
     return source_dir, source
 
 
-def deploy_source(config, source_dir, source):
+def deploy_source(config, source_dir, source, selected_paths=None):
     target = config.get("target") if isinstance(config.get("target"), dict) else {}
     required = ["host", "user", "password", "root"]
     if any(not str(target.get(key) or "").strip() for key in required):
@@ -144,11 +144,27 @@ def deploy_source(config, source_dir, source):
     if not script_path.is_file():
         fail("deploy command is not available")
 
-    file_list = []
-    for path in source_dir.rglob("*"):
-        if path.is_file():
-            file_list.append(path.relative_to(source_dir).as_posix())
-    file_list.sort()
+    if selected_paths is None:
+        file_list = []
+        for path in source_dir.rglob("*"):
+            if path.is_file():
+                file_list.append(path.relative_to(source_dir).as_posix())
+        file_list.sort()
+    else:
+        if not isinstance(selected_paths, list) or not selected_paths:
+            fail("deploy paths configuration is invalid")
+        file_list = []
+        seen = set()
+        for value in selected_paths:
+            relative = safe_relative_path(value)
+            if relative in seen:
+                continue
+            target_path = source_dir / relative
+            if not target_path.is_file():
+                fail("deploy path is not available")
+            seen.add(relative)
+            file_list.append(relative)
+        file_list.sort()
 
     env = os.environ.copy()
     env.update(
@@ -254,11 +270,12 @@ def main():
     source_ref = command.get("source_ref")
     if source_ref is not None:
         source_ref = safe_ref(source_ref)
+    deploy_paths = command.get("deploy_paths")
 
     with tempfile.TemporaryDirectory(prefix="bridge-") as directory:
         source_dir, source = download_source(config, directory, source_ref)
         if mode == "deploy":
-            deploy_source(config, source_dir, source)
+            deploy_source(config, source_dir, source, deploy_paths)
             verify_deploy(config)
         else:
             operate_source(source_dir)
