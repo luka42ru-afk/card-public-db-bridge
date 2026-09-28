@@ -1,4 +1,5 @@
 {
-  "request_id": "deploy-clickable-all-ore-smelting-20260928",
-  "mode": "deploy"
+  "request_id": "deploy-card-site-develop-action-free-20260928",
+  "mode": "deploy",
+  "source_ref": "develop"
 }
