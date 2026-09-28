@@ -1,12 +1,5 @@
 {
-  "request_id": "deploy-settings-battle-speed-20260929",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_paths": [
-    "js/game_settings.js",
-    "js/battle.js",
-    "js/battle_core.js",
-    "js/inventory.js",
-    "www/main.php"
-  ]
+  "request_id": "operate-post-settings-battle-speed-20260929",
+  "mode": "operate",
+  "source_ref": "develop"
 }
