@@ -1,9 +1,5 @@
 {
-  "request_id": "deploy-develop-20260929-ui-refresh",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_paths": [
-    "js/inventory.js",
-    "www/main.php"
-  ]
+  "request_id": "operate-postdeploy-20260929",
+  "mode": "operate",
+  "source_ref": "develop"
 }
