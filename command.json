@@ -1,10 +1,5 @@
 {
-  "request_id": "deploy-persistent-result-feed-root-20260928",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_paths": [
-    "www/main.php",
-    "js/effect_popup.js",
-    "js/effect_popup.original.js"
-  ]
+  "request_id": "operate-treant-adaptive-v56-preflight-20260929",
+  "mode": "operate",
+  "source_ref": "develop"
 }
