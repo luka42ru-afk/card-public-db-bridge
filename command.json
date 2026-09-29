@@ -1,5 +1,5 @@
 {
-  "request_id": "inspect-repeatable-necromancer-quest-before-v59",
+  "request_id": "inspect-repeatable-necromancer-quest-v59-preapply",
   "mode": "operate",
   "source_ref": "feature/repeatable-necromancer-quests-inventory"
 }
