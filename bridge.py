@@ -228,6 +228,8 @@ def operate_source(source_dir):
                     detail = str(payload.get("error") or "").replace("\n", " ").strip()[:500]
         except Exception:
             detail = ""
+        if not detail:
+            detail = str(result.stderr or "").replace("\n", " ").strip()[-500:]
         fail("private operation failed" + (": " + detail if detail else ""))
 
     try:
