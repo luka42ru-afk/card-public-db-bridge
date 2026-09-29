@@ -1,13 +1,5 @@
 {
-  "request_id": "deploy-repeatable-necromancer-quests-inventory-v59",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_paths": [
-    "libs/quests.php",
-    "libs/repeatable_necromancer_quest_v59_data.php",
-    "www/questFeature.php",
-    "www/inventory.php",
-    "js/inventory.js",
-    "www/main.php"
-  ]
+  "request_id": "apply-repeatable-necromancer-quest-v59",
+  "mode": "operate",
+  "source_ref": "develop"
 }
