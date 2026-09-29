@@ -1,7 +1,10 @@
 {
-  "request_id": "inspect-production-icons-20260929",
-  "mode": "inspect_ftp",
-  "inspect_path": "img/icons",
-  "recursive": true,
-  "max_items": 1000
+  "request_id": "deploy-inventory-production-icons-20260929-v1",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_paths": [
+    "js/game_icons.js",
+    "js/inventory.js",
+    "www/main.php"
+  ]
 }
