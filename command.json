@@ -1,9 +1,5 @@
 {
-  "request_id": "deploy-skeleton-necromancer-status-v58-runtime",
-  "mode": "deploy",
-  "source_ref": "feature/skeleton-necromancer-status-immunity",
-  "deploy_paths": [
-    "www/questFeature.php",
-    "libs/skeleton_necromancer_status_v58_data.php"
-  ]
+  "request_id": "apply-skeleton-necromancer-status-v58",
+  "mode": "operate",
+  "source_ref": "feature/skeleton-necromancer-status-immunity"
 }
