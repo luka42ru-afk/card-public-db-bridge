@@ -1,12 +1,5 @@
 {
-  "request_id": "deploy-necro-status-v57",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_paths": [
-    "libs/necromancer_path_v57_data.php",
-    "www/necromancerPathFeature.php",
-    "www/inventory.php",
-    "js/inventory.js",
-    "www/main.php"
-  ]
+  "request_id": "apply-necro-status-v57",
+  "mode": "operate",
+  "source_ref": "develop"
 }
