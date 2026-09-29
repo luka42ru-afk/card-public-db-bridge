@@ -1,5 +1,8 @@
 {
-  "request_id": "apply-necromancer-status-v57-final",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-necromancer-status-v57-verifier-final",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_paths": [
+    "www/necromancerPathFeature.php"
+  ]
 }
