@@ -1,5 +1,5 @@
 {
-  "request_id": "operate-post-runtime-deploy-20260929-threat-hint",
-  "mode": "operate",
+  "request_id": "runtime-sync-20260930-001",
+  "mode": "deploy",
   "source_ref": "develop"
 }
