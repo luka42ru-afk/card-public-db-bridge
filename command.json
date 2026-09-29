@@ -1,5 +1,5 @@
 {
-  "request_id": "operate-post-feed-filter-settings-20260929",
+  "request_id": "inspect-necromancer-path-before-v57-20260929",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "feature/necromancer-status-v57"
 }
