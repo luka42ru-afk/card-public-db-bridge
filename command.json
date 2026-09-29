@@ -1,5 +1,8 @@
 {
-  "request_id": "apply-repeatable-necromancer-quest-v59",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-v59-semantic-verifier-fix",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_paths": [
+    "www/questFeature.php"
+  ]
 }
