@@ -220,7 +220,15 @@ def operate_source(source_dir):
         text=True,
     )
     if result.returncode != 0:
-        fail("private operation failed")
+        detail = ""
+        try:
+            if result_path.is_file():
+                payload = json.loads(result_path.read_text(encoding="utf-8"))
+                if isinstance(payload, dict):
+                    detail = str(payload.get("error") or "").replace("\n", " ").strip()[:500]
+        except Exception:
+            detail = ""
+        fail("private operation failed" + (": " + detail if detail else ""))
 
     try:
         payload = json.loads(result_path.read_text(encoding="utf-8"))
