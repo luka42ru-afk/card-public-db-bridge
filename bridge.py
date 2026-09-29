@@ -213,6 +213,70 @@ def deploy_source(config, source_dir, source, selected_paths=None):
         fail("deployment failed")
 
 
+def verify_private_deploy_files(config, source_dir, selected_paths):
+    target = config.get("target") if isinstance(config.get("target"), dict) else {}
+    required = ["host", "user", "password", "root"]
+    if any(not str(target.get(key) or "").strip() for key in required):
+        fail("target configuration is missing")
+
+    if not isinstance(selected_paths, list) or not selected_paths:
+        fail("private deploy verification is unavailable")
+
+    mode = str(target.get("mode") or "auto").lower()
+    port = int(target.get("port") or 21)
+    root = str(target.get("root") or "/")
+
+    def connect_one(candidate):
+        if candidate == "ftps":
+            ftp = ftplib.FTP_TLS(timeout=30)
+            ftp.connect(str(target["host"]), port)
+            ftp.login(str(target["user"]), str(target["password"]))
+            ftp.prot_p()
+            return ftp
+        if candidate == "ftp":
+            ftp = ftplib.FTP(timeout=30)
+            ftp.connect(str(target["host"]), port)
+            ftp.login(str(target["user"]), str(target["password"]))
+            return ftp
+        raise ValueError("unsupported ftp mode")
+
+    candidates = [mode] if mode in ("ftp", "ftps") else ["ftps", "ftp"]
+    ftp = None
+    for candidate in candidates:
+        try:
+            ftp = connect_one(candidate)
+            break
+        except ftplib.all_errors:
+            continue
+    if ftp is None:
+        fail("private deploy verification failed")
+
+    try:
+        for value in selected_paths:
+            relative = safe_relative_path(value)
+            local_path = source_dir / relative
+            if not local_path.is_file():
+                fail("private deploy verification failed")
+
+            remote_path = posixpath.normpath(posixpath.join(root, relative))
+            chunks = []
+            try:
+                ftp.retrbinary("RETR " + remote_path, chunks.append)
+            except ftplib.all_errors:
+                fail("private deploy verification failed")
+
+            if b"".join(chunks) != local_path.read_bytes():
+                fail("private deploy verification failed")
+    finally:
+        try:
+            ftp.quit()
+        except Exception:
+            try:
+                ftp.close()
+            except Exception:
+                pass
+
+
 def operate_source(source_dir):
     descriptor = source_dir / ".deploy" / "public_bridge_command.json"
     if not descriptor.is_file():
@@ -412,6 +476,8 @@ def main():
             if deploy_scope == "private":
                 deploy_paths = load_private_deploy_paths(source_dir)
             deploy_source(config, source_dir, source, deploy_paths)
+            if deploy_scope == "private":
+                verify_private_deploy_files(config, source_dir, deploy_paths)
             verify_deploy(config)
         else:
             operate_source(source_dir)
