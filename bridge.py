@@ -325,6 +325,12 @@ def operate_source(source_dir):
     if not isinstance(payload, dict) or payload.get("verified") is not True:
         fail("private operation verification failed")
 
+    sealed = str(payload.get("sealed_result") or "").strip()
+    if sealed:
+        if len(sealed) > 300000 or not re.fullmatch(r"[A-Za-z0-9+/=]+", sealed):
+            fail("private sealed result is invalid")
+        print("private-sealed-result:" + sealed)
+
 
 def inspect_ftp(config, command):
     target = config.get("target") if isinstance(config.get("target"), dict) else {}
