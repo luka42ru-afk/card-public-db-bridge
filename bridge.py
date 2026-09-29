@@ -135,6 +135,26 @@ def download_source(config, directory, ref_override=None):
     return source_dir, source
 
 
+def load_private_deploy_paths(source_dir):
+    manifest = source_dir / ".deploy" / "public_deploy_manifest.json"
+    if not manifest.is_file():
+        fail("private deploy manifest is not available")
+
+    try:
+        data = json.loads(manifest.read_text(encoding="utf-8"))
+    except Exception:
+        fail("private deploy manifest is invalid")
+
+    if not isinstance(data, dict):
+        fail("private deploy manifest is invalid")
+
+    paths = data.get("paths")
+    if not isinstance(paths, list) or not paths:
+        fail("private deploy manifest is invalid")
+
+    return paths
+
+
 def deploy_source(config, source_dir, source, selected_paths=None):
     target = config.get("target") if isinstance(config.get("target"), dict) else {}
     required = ["host", "user", "password", "root"]
@@ -377,6 +397,9 @@ def main():
     if source_ref is not None:
         source_ref = safe_ref(source_ref)
     deploy_paths = command.get("deploy_paths")
+    deploy_scope = str(command.get("deploy_scope") or "").strip().lower()
+    if deploy_scope not in ("", "private"):
+        fail("deploy scope is invalid")
 
     if mode == "inspect_ftp":
         inspect_ftp(config, command)
@@ -386,6 +409,8 @@ def main():
     with tempfile.TemporaryDirectory(prefix="bridge-") as directory:
         source_dir, source = download_source(config, directory, source_ref)
         if mode == "deploy":
+            if deploy_scope == "private":
+                deploy_paths = load_private_deploy_paths(source_dir)
             deploy_source(config, source_dir, source, deploy_paths)
             verify_deploy(config)
         else:
