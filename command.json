@@ -1,5 +1,8 @@
 {
-  "request_id": "apply-necro-status-v57-diagnose-2",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-necromancer-status-v57-verifier-fix",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_paths": [
+    "www/necromancerPathFeature.php"
+  ]
 }
