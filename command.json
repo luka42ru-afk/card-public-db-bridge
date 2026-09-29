@@ -1,5 +1,5 @@
 {
-  "request_id": "operate-post-runtime-update-20260929-gm-auto",
+  "request_id": "operate-threat-source-inspect-20260929",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bc47b6a18c4fe88801ffb4443343a965b7e5e459"
 }
