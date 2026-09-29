@@ -1,5 +1,7 @@
+import ftplib
 import json
 import os
+import posixpath
 import re
 import subprocess
 import sys
@@ -10,7 +12,7 @@ import urllib.request
 import zipfile
 from pathlib import Path
 
-ALLOWED_MODES = {"deploy", "operate"}
+ALLOWED_MODES = {"deploy", "operate", "inspect_ftp"}
 
 
 def fail(message):
@@ -240,6 +242,100 @@ def operate_source(source_dir):
         fail("private operation verification failed")
 
 
+def inspect_ftp(config, command):
+    target = config.get("target") if isinstance(config.get("target"), dict) else {}
+    required = ["host", "user", "password", "root"]
+    if any(not str(target.get(key) or "").strip() for key in required):
+        fail("target configuration is missing")
+
+    relative = safe_relative_path(command.get("inspect_path") or "")
+    recursive = bool(command.get("recursive", True))
+    max_items = int(command.get("max_items") or 500)
+    if max_items < 1 or max_items > 2000:
+        fail("inspect max_items is invalid")
+
+    root = str(target["root"] or "/")
+    remote_root = posixpath.normpath(posixpath.join(root, relative))
+    mode = str(target.get("mode") or "auto").lower()
+    port = int(target.get("port") or 21)
+
+    def connect_one(candidate):
+        if candidate == "ftps":
+            ftp = ftplib.FTP_TLS(timeout=30)
+            ftp.connect(str(target["host"]), port)
+            ftp.login(str(target["user"]), str(target["password"]))
+            ftp.prot_p()
+            return ftp
+        if candidate == "ftp":
+            ftp = ftplib.FTP(timeout=30)
+            ftp.connect(str(target["host"]), port)
+            ftp.login(str(target["user"]), str(target["password"]))
+            return ftp
+        raise ValueError("unsupported ftp mode")
+
+    candidates = [mode] if mode in ("ftp", "ftps") else ["ftps", "ftp"]
+    ftp = None
+    last_error = None
+    for candidate in candidates:
+        try:
+            ftp = connect_one(candidate)
+            break
+        except ftplib.all_errors as exc:
+            last_error = exc
+    if ftp is None:
+        fail("ftp inspection connection failed" + (": " + str(last_error) if last_error else ""))
+
+    items = []
+
+    def walk(remote_dir, relative_dir=""):
+        if len(items) >= max_items:
+            return
+        try:
+            rows = list(ftp.mlsd(remote_dir, facts=["type", "size", "modify"]))
+        except ftplib.all_errors as exc:
+            fail("ftp inspection failed: " + str(exc))
+        for name, facts in rows:
+            if name in (".", ".."):
+                continue
+            item_rel = posixpath.join(relative_dir, name) if relative_dir else name
+            kind = str(facts.get("type") or "unknown")
+            item = {"path": item_rel, "type": kind}
+            if facts.get("size") is not None:
+                try:
+                    item["size"] = int(facts["size"])
+                except Exception:
+                    item["size"] = facts["size"]
+            if facts.get("modify"):
+                item["modify"] = facts["modify"]
+            items.append(item)
+            if len(items) >= max_items:
+                return
+            if recursive and kind == "dir":
+                walk(posixpath.join(remote_dir, name), item_rel)
+
+    try:
+        walk(remote_root)
+    finally:
+        try:
+            ftp.quit()
+        except Exception:
+            try:
+                ftp.close()
+            except Exception:
+                pass
+
+    result = {
+        "verified": True,
+        "mode": "inspect_ftp",
+        "path": relative,
+        "recursive": recursive,
+        "count": len(items),
+        "truncated": len(items) >= max_items,
+        "items": sorted(items, key=lambda row: str(row.get("path") or "").lower()),
+    }
+    print(json.dumps(result, ensure_ascii=False))
+
+
 def verify_deploy(config):
     verify = config.get("verify")
     if not isinstance(verify, dict):
@@ -281,6 +377,11 @@ def main():
     if source_ref is not None:
         source_ref = safe_ref(source_ref)
     deploy_paths = command.get("deploy_paths")
+
+    if mode == "inspect_ftp":
+        inspect_ftp(config, command)
+        print("bridge operation succeeded")
+        return
 
     with tempfile.TemporaryDirectory(prefix="bridge-") as directory:
         source_dir, source = download_source(config, directory, source_ref)
