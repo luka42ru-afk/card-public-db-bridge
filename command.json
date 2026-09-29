@@ -1,5 +1,5 @@
 {
-  "request_id": "apply-skeleton-necromancer-status-v58",
+  "request_id": "verify-skeleton-necromancer-status-v58",
   "mode": "operate",
-  "source_ref": "feature/skeleton-necromancer-status-immunity"
+  "source_ref": "develop"
 }
