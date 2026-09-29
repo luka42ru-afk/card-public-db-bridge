@@ -1,10 +1,5 @@
 {
-  "request_id": "deploy-inventory-production-icons-20260929-v1",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_paths": [
-    "js/game_icons.js",
-    "js/inventory.js",
-    "www/main.php"
-  ]
+  "request_id": "operate-post-runtime-deploy-20260929",
+  "mode": "operate",
+  "source_ref": "develop"
 }
