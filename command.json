@@ -1,5 +1,12 @@
 {
-  "request_id": "apply-necromancer-status-v57-final-2",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-necromancer-status-v57-fix-20260929",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_paths": [
+    "www/necromancerPathFeature.php",
+    "libs/necromancer_path_v57_data.php",
+    "www/inventory.php",
+    "js/inventory.js",
+    "www/main.php"
+  ]
 }
