@@ -1,5 +1,6 @@
 {
-  "request_id": "shared-validate-preflight-019",
-  "mode": "operate",
-  "source_ref": "feature/shared-forest-world-events"
+  "request_id": "deploy-shared-forest-runtime-020",
+  "mode": "deploy",
+  "source_ref": "feature/shared-forest-world-events",
+  "deploy_scope": "private"
 }
