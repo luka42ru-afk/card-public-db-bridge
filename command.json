@@ -1,5 +1,6 @@
 {
-  "request_id": "open-errors-validation-20260930-005",
-  "mode": "operate",
-  "source_ref": "test/open-errors-validation"
+  "request_id": "deploy-open-errors-fix-20260930-006",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
