@@ -1,5 +1,6 @@
 {
-  "request_id": "private-source-check-20260930-006",
-  "mode": "operate",
-  "source_ref": "bugfix/showcard-timeout-recovery"
+  "request_id": "runtime-sync-20260930-005",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
