@@ -1,5 +1,5 @@
 {
-  "request_id": "verify-open-error-set-20260930-007",
+  "request_id": "mark-open-errors-fixed-20260930-008",
   "mode": "operate",
   "source_ref": "test/open-errors-live-verify"
 }
