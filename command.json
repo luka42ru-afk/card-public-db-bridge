@@ -1,5 +1,5 @@
 {
-  "request_id": "verify-no-open-errors-20260930-009",
+  "request_id": "final-open-errors-readback-20260930-010",
   "mode": "operate",
-  "source_ref": "test/open-errors-live-verify"
+  "source_ref": "develop"
 }
