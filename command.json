@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-direct-attack-power-hint-20260930",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "private-readback-20260930-shared-events-001",
+  "mode": "operate",
+  "source_ref": "feature/shared-forest-world-events"
 }
