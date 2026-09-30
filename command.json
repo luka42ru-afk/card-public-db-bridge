@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-settings-character-select-20260930",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "open-errors-inspect-20260930-001",
+  "mode": "operate",
+  "source_ref": "bugfix/open-errors-20260930"
 }
