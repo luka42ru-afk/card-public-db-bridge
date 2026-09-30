@@ -1,5 +1,5 @@
 {
-  "request_id": "final-open-errors-readback-20260930-010",
+  "request_id": "stump-live-power-inspect-20261001-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "inspect/stump-live-power-20261001"
 }
