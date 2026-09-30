@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-shared-forest-runtime-020",
-  "mode": "deploy",
-  "source_ref": "feature/shared-forest-world-events",
-  "deploy_scope": "private"
+  "request_id": "apply-shared-forest-events-v62-021",
+  "mode": "operate",
+  "source_ref": "feature/shared-forest-world-events"
 }
