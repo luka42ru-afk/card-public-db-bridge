@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-open-errors-fix-20260930-006",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "verify-open-error-set-20260930-007",
+  "mode": "operate",
+  "source_ref": "test/open-errors-live-verify"
 }
