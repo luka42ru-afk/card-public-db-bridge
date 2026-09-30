@@ -1,5 +1,5 @@
 {
-  "request_id": "private-readback-20260930-shared-events-003",
+  "request_id": "shared-events-read-004",
   "mode": "operate",
   "source_ref": "feature/shared-forest-world-events"
 }
