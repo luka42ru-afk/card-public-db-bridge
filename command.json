@@ -1,5 +1,6 @@
 {
-  "request_id": "shared-final-develop-verify-030",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-settings-character-select-20260930",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
