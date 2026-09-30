@@ -1,5 +1,5 @@
 {
-  "request_id": "private-readback-20260930-005",
+  "request_id": "private-readback-20260930-006",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "feature/error-fixed-state"
 }
