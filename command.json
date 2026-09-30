@@ -1,6 +1,5 @@
 {
-  "request_id": "runtime-sync-20260930-006",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "private-readback-20260930-004",
+  "mode": "operate",
+  "source_ref": "develop"
 }
