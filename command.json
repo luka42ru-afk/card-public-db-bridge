@@ -1,6 +1,5 @@
 {
-  "request_id": "undead-soul-path-v68-runtime-deploy-20261001-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "undead-soul-path-v68-inspect-20261001-final-001",
+  "mode": "operate",
+  "source_ref": "ops/undead-soul-path-v68-20261001-final"
 }
