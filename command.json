@@ -1,5 +1,6 @@
 {
-  "request_id": "stump-live-power-inspect-20261001-003",
-  "mode": "operate",
-  "source_ref": "inspect/stump-live-power-20261001"
+  "request_id": "delivery-20261001-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
