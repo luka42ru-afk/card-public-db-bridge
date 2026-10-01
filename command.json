@@ -1,5 +1,6 @@
 {
-  "request_id": "ore-badge-labels-inspect-20261001-001",
-  "mode": "operate",
-  "source_ref": "inspect/ore-badge-labels-20261001"
+  "request_id": "ore-badge-labels-runtime-deploy-20261001-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
