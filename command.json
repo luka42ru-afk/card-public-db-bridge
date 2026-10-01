@@ -1,5 +1,5 @@
 {
-  "request_id": "ore-badge-labels-v64-inspect-20261001-002",
+  "request_id": "mountain-route-inspect-20261001-001",
   "mode": "operate",
-  "source_ref": "ops/ore-badge-labels-v64-apply-20261001"
+  "source_ref": "inspect/mountain-route-live-20261001"
 }
