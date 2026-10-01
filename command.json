@@ -1,5 +1,6 @@
 {
-  "request_id": "mountain-entry-preview-v66-inspect-20261001-002",
-  "mode": "operate",
-  "source_ref": "ops/mountain-entry-preview-v66-20261001"
+  "request_id": "snow-mountain-entry-v67-runtime-deploy-20261001-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
