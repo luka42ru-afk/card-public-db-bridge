@@ -1,5 +1,6 @@
 {
-  "request_id": "mountain-route-inspect-20261001-004",
-  "mode": "operate",
-  "source_ref": "inspect/mountain-route-live-20261001"
+  "request_id": "mountain-snow-v65-runtime-deploy-20261001-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
