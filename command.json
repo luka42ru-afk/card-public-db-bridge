@@ -1,6 +1,5 @@
 {
-  "request_id": "mountain-entry-preview-v66-runtime-deploy-20261001-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "mountain-entry-preview-v66-inspect-20261001-001",
+  "mode": "operate",
+  "source_ref": "ops/mountain-entry-preview-v66-20261001"
 }
