@@ -1,7 +1,5 @@
 {
-  "request_id": "downloads-page-verify-20261001-001",
-  "mode": "inspect_ftp",
-  "inspect_path": "downloads",
-  "recursive": false,
-  "max_items": 20
+  "request_id": "ore-badge-labels-inspect-20261001-001",
+  "mode": "operate",
+  "source_ref": "inspect/ore-badge-labels-20261001"
 }
