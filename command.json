@@ -1,5 +1,7 @@
 {
-  "request_id": "undead-soul-path-v68-final-verify-20261001-001",
-  "mode": "operate",
-  "source_ref": "ops/undead-soul-path-v68-verify-20261001"
+  "request_id": "inspect-crystal-unit-art-20261003-001",
+  "mode": "inspect_ftp",
+  "inspect_path": "img/units",
+  "recursive": false,
+  "max_items": 2000
 }
