@@ -1,6 +1,5 @@
 {
-  "request_id": "factions-outpost-v70-runtime-deploy-20261003-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "factions-outpost-v70-inspect-20261003-003",
+  "mode": "operate",
+  "source_ref": "ops/factions-outpost-v70-verify-20261003"
 }
