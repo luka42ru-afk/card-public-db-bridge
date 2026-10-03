@@ -1,7 +1,6 @@
 {
-  "request_id": "inspect-crystal-unit-art-20261003-001",
-  "mode": "inspect_ftp",
-  "inspect_path": "img/units",
-  "recursive": false,
-  "max_items": 2000
+  "request_id": "crystal-unit-card-art-v69-runtime-deploy-20261003-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
