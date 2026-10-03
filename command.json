@@ -1,5 +1,6 @@
 {
-  "request_id": "outpost-preflight-snow-20261003-001",
-  "mode": "operate",
-  "source_ref": "inspect/outpost-preflight-20261003"
+  "request_id": "factions-outpost-v70-runtime-deploy-20261003-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
