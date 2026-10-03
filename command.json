@@ -1,6 +1,5 @@
 {
-  "request_id": "crystal-unit-card-art-v69-runtime-deploy-20261003-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "crystal-unit-card-art-v69-inspect-20261003-001",
+  "mode": "operate",
+  "source_ref": "ops/crystal-unit-card-art-v69-20261003"
 }
