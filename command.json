@@ -1,6 +1,5 @@
 {
-  "request_id": "astral-outpost-clones-v82-deploy-20261004-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "astral-outpost-clones-v82-inspect-20261004-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
