@@ -1,5 +1,5 @@
 {
-  "request_id": "faction-npc-dialog-v77-postinspect-20261004-001",
+  "request_id": "faction-leave-own-npc-sourcecheck-20261004-001",
   "mode": "operate",
-  "source_ref": "ops/faction-npc-dialog-v77-rollout-20261004"
+  "source_ref": "ops/faction-leave-own-npc-sourcecheck-20261004"
 }
