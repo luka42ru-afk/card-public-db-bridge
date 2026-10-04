@@ -1,5 +1,5 @@
 {
-  "request_id": "outpost-inventory-list-deploy-20261004-001",
+  "request_id": "outpost-ore-bonus-runtime-deploy-20261004-001",
   "mode": "deploy",
   "source_ref": "develop",
   "deploy_scope": "private"
