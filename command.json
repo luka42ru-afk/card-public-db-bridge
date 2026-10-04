@@ -1,7 +1,5 @@
 {
-  "request_id": "hidden-leaf-icon-inspect-20261004-001",
-  "mode": "inspect_ftp",
-  "inspect_path": "img/fractions",
-  "recursive": false,
-  "max_items": 50
+  "request_id": "hidden-leaf-v75-sourcecheck-20261004-001",
+  "mode": "operate",
+  "source_ref": "ops/hidden-leaf-v75-sourcecheck-20261004"
 }
