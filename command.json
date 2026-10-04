@@ -1,5 +1,5 @@
 {
-  "request_id": "outpost-exit-loop-v78-postinspect-20261004-001",
+  "request_id": "faction-outpost-bonus-inventory-sourcecheck-20261004-001",
   "mode": "operate",
-  "source_ref": "ops/outpost-exit-loop-v78-rollout-20261004"
+  "source_ref": "ops/faction-outpost-bonus-inventory-sourcecheck-20261004"
 }
