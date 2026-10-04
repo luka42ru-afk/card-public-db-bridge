@@ -1,5 +1,6 @@
 {
-  "request_id": "faction-leave-own-npc-sourcecheck-20261004-001",
-  "mode": "operate",
-  "source_ref": "ops/faction-leave-own-npc-sourcecheck-20261004"
+  "request_id": "faction-leave-own-npc-runtime-deploy-20261004-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
