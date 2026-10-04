@@ -1,5 +1,6 @@
 {
-  "request_id": "outpost-guard-unit-name-v79-verify-20261004-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "shared-outpost-guard-unit-v80-deploy-20261004-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
