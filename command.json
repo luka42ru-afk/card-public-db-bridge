@@ -1,6 +1,7 @@
 {
-  "request_id": "faction-inventory-hover-deploy-20261004-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "faction-inventory-hover-ftp-verify-20261004-001",
+  "mode": "inspect_ftp",
+  "inspect_path": "js",
+  "recursive": false,
+  "max_items": 200
 }
