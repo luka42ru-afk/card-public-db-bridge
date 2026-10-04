@@ -1,5 +1,5 @@
 {
-  "request_id": "hidden-leaf-v75-postinspect-20261004-001",
+  "request_id": "outpost-travel-lock-schema-preinspect-20261004-001",
   "mode": "operate",
-  "source_ref": "ops/hidden-leaf-v75-rollout-20261004"
+  "source_ref": "ops/outpost-travel-lock-preinspect-20261004"
 }
