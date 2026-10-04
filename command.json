@@ -1,5 +1,6 @@
 {
-  "request_id": "faction-outpost-bonus-inventory-sourcecheck-20261004-002",
-  "mode": "operate",
-  "source_ref": "ops/faction-outpost-bonus-inventory-sourcecheck2-20261004"
+  "request_id": "faction-outpost-bonus-inventory-deploy-20261004-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
