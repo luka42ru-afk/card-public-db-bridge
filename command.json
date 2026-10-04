@@ -1,5 +1,5 @@
 {
-  "request_id": "outpost-character-flow-20261004-004",
+  "request_id": "outpost-exit-loop-sourcecheck-20261004-001",
   "mode": "operate",
-  "source_ref": "ops/outpost-exit-preinspect-20261004"
+  "source_ref": "ops/outpost-exit-loop-sourcecheck-20261004"
 }
