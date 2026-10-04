@@ -1,5 +1,5 @@
 {
-  "request_id": "outpost-exit-loop-v78-apply-20261004-001",
+  "request_id": "outpost-exit-loop-v78-postinspect-20261004-001",
   "mode": "operate",
   "source_ref": "ops/outpost-exit-loop-v78-rollout-20261004"
 }
