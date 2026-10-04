@@ -1,5 +1,5 @@
 {
-  "request_id": "faction-travel-v71-apply-20261004-001",
+  "request_id": "faction-travel-v71-inspect-20261004-001",
   "mode": "operate",
-  "source_ref": "ops/faction-travel-v71-apply-20261004"
+  "source_ref": "ops/faction-travel-v71-verify-20261004"
 }
