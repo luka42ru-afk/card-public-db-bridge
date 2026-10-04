@@ -1,7 +1,6 @@
 {
-  "request_id": "inspect-fraction-icons-20261004-001",
-  "mode": "inspect_ftp",
-  "inspect_path": "img/fractions",
-  "recursive": true,
-  "max_items": 100
+  "request_id": "travel-point-icon-v72-deploy-20261004-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
