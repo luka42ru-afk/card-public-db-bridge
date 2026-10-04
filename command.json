@@ -1,6 +1,5 @@
 {
-  "request_id": "outpost-travel-label-v74-runtime-20261004-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "outpost-travel-label-v74-preinspect-20261004-001",
+  "mode": "operate",
+  "source_ref": "ops/outpost-travel-label-v74-rollout-20261004"
 }
