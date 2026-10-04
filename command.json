@@ -1,5 +1,7 @@
 {
-  "request_id": "faction-bonus-inventory-live-db-verify-20261004-001",
-  "mode": "operate",
-  "source_ref": "ops/faction-bonus-inventory-production-verify-20261004"
+  "request_id": "faction-bonus-inventory-ftp-verify-20261004-001",
+  "mode": "inspect_ftp",
+  "inspect_path": "js",
+  "recursive": false,
+  "max_items": 200
 }
