@@ -1,6 +1,5 @@
 {
-  "request_id": "outpost-ore-bonus-runtime-deploy-20261004-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "outpost-bonuses-v73-preinspect-20261004-001",
+  "mode": "operate",
+  "source_ref": "ops/outpost-bonuses-v73-rollout-20261004"
 }
