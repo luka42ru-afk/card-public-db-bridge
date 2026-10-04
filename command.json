@@ -1,5 +1,6 @@
 {
-  "request_id": "travel-point-icons-v72-inspect-20261004-001",
-  "mode": "operate",
-  "source_ref": "ops/travel-point-icons-v72-verify-20261004"
+  "request_id": "outpost-inventory-list-deploy-20261004-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
