@@ -1,5 +1,5 @@
 {
-  "request_id": "outpost-travel-lock-rows-preinspect-20261004-002",
+  "request_id": "outpost-travel-lock-sourcecheck-20261004-001",
   "mode": "operate",
-  "source_ref": "ops/outpost-travel-lock-preinspect-20261004"
+  "source_ref": "ops/outpost-travel-lock-sourcecheck-20261004"
 }
