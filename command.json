@@ -1,5 +1,5 @@
 {
-  "request_id": "outpost-travel-lock-v76-postinspect-20261004-001",
+  "request_id": "faction-npc-menu-white-preinspect-20261004-001",
   "mode": "operate",
-  "source_ref": "ops/outpost-travel-lock-v76-rollout-20261004"
+  "source_ref": "ops/faction-npc-menu-preinspect-20261004"
 }
