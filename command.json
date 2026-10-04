@@ -1,5 +1,5 @@
 {
-  "request_id": "all-factions-inventory-deploy-20261004-001",
+  "request_id": "outpost-guard-unit-name-v79-deploy-20261004-001",
   "mode": "deploy",
   "source_ref": "develop",
   "deploy_scope": "private"
