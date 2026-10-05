@@ -1,5 +1,6 @@
 {
-  "request_id": "astral-clone-persistent-damage-v83-preinspect-20261005-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "astral-clone-persistent-damage-v83-deploy-20261005-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
