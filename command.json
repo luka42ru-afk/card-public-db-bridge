@@ -1,5 +1,6 @@
 {
-  "request_id": "chat-war-clone-results-v84-verify-20261005-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "battleground-v85-deploy-20261005-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
