@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-img-gallery-sort-date-20261006-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "img-gallery-sort-date-readonly-20261006-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
