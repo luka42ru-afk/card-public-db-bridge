@@ -1,5 +1,6 @@
 {
-  "request_id": "inventory-http500-readonly-20261006-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-max-crafting-tier-inventory-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
