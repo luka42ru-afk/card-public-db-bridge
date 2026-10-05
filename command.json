@@ -1,5 +1,6 @@
 {
-  "request_id": "outpost-chapter-v86-verify-20261006-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-img-gallery-conventions-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
