@@ -1,5 +1,5 @@
 {
-  "request_id": "inventory-http500-error-inspect-20261006-001",
+  "request_id": "inventory-http500-plain-inspect-20261006-002",
   "mode": "operate",
   "source_ref": "bugfix/inventory-http-500"
 }
