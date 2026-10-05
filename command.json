@@ -1,5 +1,6 @@
 {
-  "request_id": "max-crafting-tier-inventory-readonly-20261006-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "img-gallery-drag-drop-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
