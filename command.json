@@ -1,5 +1,6 @@
 {
-  "request_id": "battleground-v85-verify-20261005-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-private-img-gallery-replace-20261005-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
