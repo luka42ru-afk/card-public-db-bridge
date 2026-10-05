@@ -1,5 +1,6 @@
 {
-  "request_id": "img-gallery-sort-date-readonly-20261006-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "deploy-img-gallery-tag-filters-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
