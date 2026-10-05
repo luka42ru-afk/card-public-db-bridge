@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-inventory-http500-fix-20261006-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "inventory-http500-readonly-20261006-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
