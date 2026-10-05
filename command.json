@@ -1,5 +1,6 @@
 {
-  "request_id": "inventory-http500-plain-inspect-20261006-002",
-  "mode": "operate",
-  "source_ref": "bugfix/inventory-http-500"
+  "request_id": "deploy-inventory-http500-fix-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
