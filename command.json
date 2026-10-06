@@ -1,5 +1,6 @@
 {
-  "request_id": "ai-login-source-validate-20261006-003",
-  "mode": "operate",
-  "source_ref": "63bd052f2f7be5802d8e277275dce909d38be9e6"
+  "request_id": "ai-key-login-runtime-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
