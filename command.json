@@ -1,5 +1,6 @@
 {
-  "request_id": "entity-first-gallery-validate-20261006-002",
-  "mode": "operate",
-  "source_ref": "feature/entity-first-image-gallery"
+  "request_id": "entity-first-gallery-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
