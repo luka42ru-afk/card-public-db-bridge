@@ -1,5 +1,6 @@
 {
-  "request_id": "gm-ai-login-keys-source-validate-20261006-001",
-  "mode": "operate",
-  "source_ref": "feature/gm-ai-login-keys"
+  "request_id": "gm-ai-login-keys-runtime-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
