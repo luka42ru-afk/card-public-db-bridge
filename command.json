@@ -1,5 +1,6 @@
 {
-  "request_id": "red-thread-icons-validate-20261006-001",
-  "mode": "operate",
-  "source_ref": "bugfix/red-thread-inventory-art"
+  "request_id": "red-thread-icons-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
