@@ -1,5 +1,5 @@
 {
-  "request_id": "gm-ai-login-keys-final-readonly-20261006-001",
+  "request_id": "ai-player-key-vault-source-validate-20261006-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "feature/ai-player-key-vault"
 }
