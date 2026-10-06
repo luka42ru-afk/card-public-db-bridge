@@ -1,5 +1,5 @@
 {
-  "request_id": "ai-login-preflight-20261006-002",
+  "request_id": "ai-login-source-validate-20261006-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "9e8c64b9fad4fd3732eb5d82cdba4ed605bc715e"
 }
