@@ -1,6 +1,5 @@
 {
-  "request_id": "faction-inventory-icons-deploy-20261006-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "canonical-faction-art-validate-20261006-001",
+  "mode": "operate",
+  "source_ref": "bugfix/use-existing-faction-art"
 }
