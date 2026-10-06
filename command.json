@@ -1,6 +1,5 @@
 {
-  "request_id": "skill-gallery-attribute-type-deploy-20261006-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "entity-first-gallery-validate-20261006-001",
+  "mode": "operate",
+  "source_ref": "feature/entity-first-image-gallery"
 }
