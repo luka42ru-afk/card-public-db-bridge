@@ -1,5 +1,6 @@
 {
-  "request_id": "lumberjacking-gallery-validate-20261006-003",
-  "mode": "operate",
-  "source_ref": "bugfix/lumberjacking-gallery-icon"
+  "request_id": "lumberjacking-gallery-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
