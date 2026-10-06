@@ -1,6 +1,5 @@
 {
-  "request_id": "entity-first-gallery-deploy-20261006-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "rune-tyr-inventory-icon-validate-20261006-001",
+  "mode": "operate",
+  "source_ref": "bugfix/rune-tyr-inventory-icon"
 }
