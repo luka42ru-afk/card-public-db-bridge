@@ -1,5 +1,5 @@
 {
-  "request_id": "bg-background-payload-fix-20261006-001",
+  "request_id": "bg-stable-team-background-20261006-001",
   "mode": "deploy",
   "source_ref": "develop",
   "deploy_scope": "private"
