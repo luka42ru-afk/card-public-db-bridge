@@ -1,5 +1,5 @@
 {
-  "request_id": "mobile-story-backgrounds-inspect-20261006-001",
+  "request_id": "img-gallery-ajax-upload-validate-20261006-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/img-gallery-ajax-upload"
 }
