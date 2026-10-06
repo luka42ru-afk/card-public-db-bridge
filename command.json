@@ -1,5 +1,6 @@
 {
-  "request_id": "ai-player-key-vault-source-validate-20261006-003",
-  "mode": "operate",
-  "source_ref": "feature/ai-player-key-vault"
+  "request_id": "ai-player-key-vault-runtime-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
