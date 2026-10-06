@@ -1,5 +1,6 @@
 {
-  "request_id": "skill-gallery-attribute-type-validate-20261006-001",
-  "mode": "operate",
-  "source_ref": "bugfix/skill-gallery-attribute-type"
+  "request_id": "skill-gallery-attribute-type-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
