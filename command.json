@@ -1,5 +1,6 @@
 {
-  "request_id": "faction-inventory-icons-validate-20261006-001",
-  "mode": "operate",
-  "source_ref": "bugfix/faction-inventory-icons"
+  "request_id": "faction-inventory-icons-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
