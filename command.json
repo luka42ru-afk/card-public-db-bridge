@@ -1,6 +1,5 @@
 {
-  "request_id": "bg-stable-team-background-20261006-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "mobile-story-backgrounds-validate-20261006-001",
+  "mode": "operate",
+  "source_ref": "feature/mobile-story-backgrounds"
 }
