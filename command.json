@@ -1,5 +1,6 @@
 {
-  "request_id": "gallery-item-icons-validate-20261006-001",
-  "mode": "operate",
-  "source_ref": "bugfix/gallery-missing-item-icons"
+  "request_id": "gallery-item-icons-deploy-20261006-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
