@@ -1,6 +1,5 @@
 {
-  "request_id": "inventory-item-gallery-icons-deploy-20261008-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "inventory-item-gallery-icons-final-readonly-20261008-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
