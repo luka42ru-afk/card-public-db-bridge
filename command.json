@@ -1,5 +1,5 @@
 {
-  "request_id": "ai-player-key-vault-readback-20261006-003",
+  "request_id": "inventory-item-gallery-icons-validate-20261008-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/inventory-item-gallery-icons"
 }
