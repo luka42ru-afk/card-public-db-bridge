@@ -1,6 +1,5 @@
 {
-  "request_id": "dead-touch-v91-helper-deploy-20261011-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "dead-touch-v91-apply-20261011-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
