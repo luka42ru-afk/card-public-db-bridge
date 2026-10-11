@@ -1,5 +1,6 @@
 {
-  "request_id": "character-dialogue-opposite-answer-validate-20261012-002",
-  "mode": "operate",
-  "source_ref": "bugfix/character-dialogue-opposite-answer"
+  "request_id": "character-dialogue-opposite-answer-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
