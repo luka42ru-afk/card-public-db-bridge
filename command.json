@@ -1,5 +1,5 @@
 {
-  "request_id": "morven-v90-diagnose-20261011-001",
+  "request_id": "morven-v90-postdiag-20261011-001",
   "mode": "operate",
   "source_ref": "bugfix/morven-v90-rollout-diagnostic"
 }
