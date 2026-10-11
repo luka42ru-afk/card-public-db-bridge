@@ -1,5 +1,5 @@
 {
-  "request_id": "dead-touch-v91-postverify-20261011-001",
+  "request_id": "character-dialogue-v92-source-validate-20261012-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "feature/character-dialogue-card-v92"
 }
