@@ -1,5 +1,6 @@
 {
-  "request_id": "grot-source-validate-20261011-001",
-  "mode": "operate",
-  "source_ref": "feature/grot-corpse-rat-v89"
+  "request_id": "grot-runtime-deploy-20261011-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
