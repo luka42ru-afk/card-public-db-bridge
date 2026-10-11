@@ -1,5 +1,5 @@
 {
-  "request_id": "inventory-item-gallery-icons-final-readonly-20261008-001",
+  "request_id": "grot-preflight-20261011-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "feature/grot-corpse-rat-v89"
 }
