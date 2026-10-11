@@ -1,5 +1,6 @@
 {
-  "request_id": "character-dialogue-v92-preflight-20261012-001",
-  "mode": "operate",
-  "source_ref": "feature/character-dialogue-card-v92"
+  "request_id": "character-dialogue-v92-runtime-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
