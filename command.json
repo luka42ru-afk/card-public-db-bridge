@@ -1,6 +1,5 @@
 {
-  "request_id": "morven-v90-redeploy-20261011-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "morven-v90-final-inspect-20261011-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
