@@ -1,6 +1,5 @@
 {
-  "request_id": "character-dialogue-test-page-deploy-20261012-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "character-dialogue-test-page-validate-20261012-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
