@@ -1,5 +1,5 @@
 {
-  "request_id": "grot-postverify-20261011-001",
+  "request_id": "morven-v90-validate-20261011-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "feature/morven-bone-quest-v90"
 }
