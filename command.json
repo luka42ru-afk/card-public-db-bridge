@@ -1,6 +1,5 @@
 {
-  "request_id": "grot-runtime-deploy-20261011-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "grot-apply-20261011-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
