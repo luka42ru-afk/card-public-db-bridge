@@ -1,5 +1,6 @@
 {
-  "request_id": "character-answer-center-banner-validate-20261012-001",
-  "mode": "operate",
-  "source_ref": "bugfix/character-answer-center-banner"
+  "request_id": "character-answer-center-banner-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
