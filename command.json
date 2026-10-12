@@ -1,5 +1,6 @@
 {
-  "request_id": "character-answer-reference-style-validate-20261012-001",
-  "mode": "operate",
-  "source_ref": "bugfix/character-answer-reference-style"
+  "request_id": "character-answer-reference-style-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
