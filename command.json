@@ -1,6 +1,5 @@
 {
-  "request_id": "dialogue-answer-sides-text-fit-deploy-20261012-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "dialogue-answer-sides-text-fit-postverify-20261012-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
