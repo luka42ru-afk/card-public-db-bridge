@@ -1,6 +1,5 @@
 {
-  "request_id": "card-tilt-no-shift-deploy-20261012-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "card-pivot-bottom-center-validate-20261012-001",
+  "mode": "operate",
+  "source_ref": "bugfix/card-pivot-bottom-center"
 }
