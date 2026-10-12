@@ -1,5 +1,5 @@
 {
-  "request_id": "character-answer-palette-postverify-20261012-001",
+  "request_id": "character-answer-reference-style-validate-20261012-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/character-answer-reference-style"
 }
