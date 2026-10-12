@@ -1,6 +1,5 @@
 {
-  "request_id": "character-art-width-top-deploy-20261012-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "character-text-inside-card-validate-20261012-001",
+  "mode": "operate",
+  "source_ref": "bugfix/character-text-inside-card"
 }
