@@ -1,5 +1,6 @@
 {
-  "request_id": "card-tilt-shift-90px-validate-20261012-001",
-  "mode": "operate",
-  "source_ref": "bugfix/card-tilt-shift-90px"
+  "request_id": "card-tilt-shift-90px-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
