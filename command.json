@@ -1,5 +1,5 @@
 {
-  "request_id": "morven-turn-in-dialogue-v96-postverify-20261012-001",
+  "request_id": "morven-turn-in-dialogue-v96-idle-20261012-001",
   "mode": "operate",
-  "source_ref": "bugfix/morven-turn-in-dialogue-v96"
+  "source_ref": "develop"
 }
