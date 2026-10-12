@@ -1,5 +1,6 @@
 {
-  "request_id": "morven-grot-zombie-v95-preflight-20261012-001",
-  "mode": "operate",
-  "source_ref": "feature/morven-grot-zombie-v95"
+  "request_id": "morven-grot-zombie-v95-data-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
