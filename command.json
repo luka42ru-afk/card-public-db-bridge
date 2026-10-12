@@ -1,5 +1,6 @@
 {
-  "request_id": "morven-turn-in-dialogue-v96-preflight-20261012-002",
-  "mode": "operate",
-  "source_ref": "bugfix/morven-turn-in-dialogue-v96"
+  "request_id": "morven-turn-in-dialogue-v96-runtime-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
