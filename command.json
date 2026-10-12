@@ -1,5 +1,5 @@
 {
-  "request_id": "card-drag-relative-width-postverify-20261012-001",
+  "request_id": "card-drag-28pct-validate-20261012-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/card-drag-28pct"
 }
