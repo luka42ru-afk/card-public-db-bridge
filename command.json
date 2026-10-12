@@ -1,5 +1,6 @@
 {
-  "request_id": "grot-v93-preflight-20261012-001",
-  "mode": "operate",
-  "source_ref": "feature/grot-cycle-quest-feed-v93"
+  "request_id": "grot-v93-runtime-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
