@@ -1,5 +1,5 @@
 {
-  "request_id": "card-text-no-scroll-postverify-20261012-001",
+  "request_id": "card-tilt-10deg-validate-20261012-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/card-tilt-10deg"
 }
