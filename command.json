@@ -1,5 +1,6 @@
 {
-  "request_id": "morven-grot-corpses-v94-branch-validate-20261012-002",
-  "mode": "operate",
-  "source_ref": "feature/morven-grot-corpse-quest-v94"
+  "request_id": "morven-grot-corpses-v94-runtime-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
