@@ -1,6 +1,5 @@
 {
-  "request_id": "character-text-inside-card-deploy-20261012-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "character-answer-center-banner-validate-20261012-001",
+  "mode": "operate",
+  "source_ref": "bugfix/character-answer-center-banner"
 }
