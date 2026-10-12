@@ -1,5 +1,6 @@
 {
-  "request_id": "character-answer-reference-responsive-validate-20261012-001",
-  "mode": "operate",
-  "source_ref": "bugfix/character-answer-reference-responsive"
+  "request_id": "character-answer-reference-responsive-deploy-20261012-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
