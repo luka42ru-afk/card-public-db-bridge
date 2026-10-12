@@ -1,5 +1,5 @@
 {
-  "request_id": "morven-grot-zombie-v95-postverify-20261012-001",
+  "request_id": "card-text-no-scroll-validate-20261012-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/card-text-no-scroll"
 }
