@@ -1,6 +1,5 @@
 {
-  "request_id": "character-dialogue-name-size-deploy-20261013-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "character-dialogue-name-size-idle-20261013-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
