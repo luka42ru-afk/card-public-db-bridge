@@ -1,5 +1,5 @@
 {
-  "request_id": "character-portrait-fade-idle-20261013-001",
+  "request_id": "character-dialogue-reference-panel-validate-20261013-001",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/character-dialogue-reference-panel"
 }
