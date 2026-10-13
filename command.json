@@ -1,5 +1,6 @@
 {
-  "request_id": "character-portrait-fade-source-validate-20261013-001",
-  "mode": "operate",
-  "source_ref": "bugfix/character-portrait-bottom-fade"
+  "request_id": "character-portrait-fade-deploy-20261013-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
