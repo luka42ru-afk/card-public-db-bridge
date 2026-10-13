@@ -18,6 +18,7 @@ on:
 
 permissions:
   contents: read
+  statuses: write
 
 concurrency:
   group: public-bridge
@@ -59,3 +60,18 @@ jobs:
             exit 1
           fi
           python3 bridge.py "$BRIDGE_MODE"
+
+      - name: Record generic bridge outcome
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRIDGE_JOB_STATUS: ${{ job.status }}
+        run: |
+          set -euo pipefail
+          state=failure
+          if [ "$BRIDGE_JOB_STATUS" = "success" ]; then state=success; fi
+          gh api --method POST "repos/$GITHUB_REPOSITORY/statuses/$GITHUB_SHA" \\
+            -f state="$state" \\
+            -f context="card-public-bridge" \\
+            -f description="Bridge completed: $state"
