@@ -1,5 +1,6 @@
 {
-  "request_id": "character-dialogue-safe-top-transparency-idle-20261013-002",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "dialogue-background-banding-deploy-20261013-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
