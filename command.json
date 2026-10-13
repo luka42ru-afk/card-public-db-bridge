@@ -1,7 +1,6 @@
 {
-  "request_id": "http-500-www-inspect-20261013-003",
-  "mode": "inspect_ftp",
-  "inspect_path": "www",
-  "recursive": false,
-  "max_items": 500
+  "request_id": "revert-dialogue-transparency-http500-deploy-20261013-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
