@@ -1,5 +1,6 @@
 {
-  "request_id": "character-dialogue-reference-scale-objective-validate-20261013-003",
-  "mode": "operate",
-  "source_ref": "bugfix/character-dialogue-reference-scale-objective"
+  "request_id": "character-dialogue-reference-scale-objective-deploy-20261013-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
