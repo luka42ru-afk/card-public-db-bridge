@@ -1,5 +1,6 @@
 {
-  "request_id": "character-dialogue-quest-footer-reference-idle-20261013-001",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "character-dialogue-divider-weight-deploy-20261013-001",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
