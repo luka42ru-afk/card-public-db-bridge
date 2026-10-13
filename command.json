@@ -1,6 +1,5 @@
 {
-  "request_id": "revert-dialogue-transparency-http500-deploy-20261013-001",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "http500-rollback-idle-20261013-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
