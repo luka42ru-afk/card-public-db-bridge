@@ -71,7 +71,4 @@ jobs:
           set -euo pipefail
           state=failure
           if [ "$BRIDGE_JOB_STATUS" = "success" ]; then state=success; fi
-          gh api --method POST "repos/$GITHUB_REPOSITORY/statuses/$GITHUB_SHA" \\
-            -f state="$state" \\
-            -f context="card-public-bridge" \\
-            -f description="Bridge completed: $state"
+          gh api --method POST "repos/$GITHUB_REPOSITORY/statuses/$GITHUB_SHA" -f state="$state" -f context="card-public-bridge" -f description="Bridge completed: $state"
