@@ -1,6 +1,5 @@
 {
-  "request_id": "spark-route-deploy-20261015-002",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "spark-route-db-inspect-20261015-001",
+  "mode": "operate",
+  "source_ref": "develop"
 }
