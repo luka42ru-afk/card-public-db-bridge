@@ -1,5 +1,6 @@
 {
-  "request_id": "adaptive-low-power-pve-fix-readonly-20261015",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "parchment-expedition-v2-runtime-deploy-20261016",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
