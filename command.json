@@ -1,6 +1,5 @@
 {
-  "request_id": "adaptive-low-power-pve-fix-deploy-20261015",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "adaptive-low-power-pve-fix-readonly-20261015",
+  "mode": "operate",
+  "source_ref": "develop"
 }
