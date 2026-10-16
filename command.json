@@ -1,6 +1,5 @@
 {
-  "request_id": "light-route-choice-label-sync-deploy-20261016",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "light-route-choice-label-sync-readback-20261016",
+  "mode": "operate",
+  "source_ref": "develop"
 }
