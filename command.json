@@ -1,5 +1,6 @@
 {
-  "request_id": "parchment-map-v2-post-deploy-readonly-20261016",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "expedition-pan-v4-deploy-20261016",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
