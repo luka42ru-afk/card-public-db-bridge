@@ -1,5 +1,6 @@
 {
-  "request_id": "gm-item-grant-page-readonly-20261016",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "gm-items-sql-quote-fix-20261016",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
