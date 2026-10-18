@@ -1,5 +1,6 @@
 {
-  "request_id": "expedition-answer-side-correction-readback-20261016",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "dice-board-deploy-20261018-v1",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
