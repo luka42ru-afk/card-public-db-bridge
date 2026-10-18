@@ -1,5 +1,5 @@
 {
-  "request_id": "dungeon-art-gallery-12-slots-20261018-v1",
+  "request_id": "dice-horizontal-128px-20261018-v1",
   "mode": "deploy",
   "source_ref": "develop",
   "deploy_scope": "private"
