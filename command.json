@@ -1,6 +1,5 @@
 {
-  "request_id": "dice-board-deploy-20261018-v1",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "dice-board-inspect-before-20261018-v1",
+  "mode": "operate",
+  "source_ref": "develop"
 }
