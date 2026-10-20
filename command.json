@@ -1,5 +1,5 @@
 {
-  "request_id": "hex-campfire-live-preflight-20261020-v1",
+  "request_id": "hex-campfire-live-apply-20261020-v1",
   "mode": "operate",
   "source_ref": "develop",
   "deploy_scope": "private"
