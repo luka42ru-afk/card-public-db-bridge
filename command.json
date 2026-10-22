@@ -1,6 +1,6 @@
 {
-  "request_id": "friends-account-avatar-party-runtime-20261022",
-  "mode": "deploy",
+  "request_id": "social-dungeon-v6-live-schema-preinspect-20261022",
+  "mode": "operate",
   "source_ref": "develop",
   "deploy_scope": "private"
 }
