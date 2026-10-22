@@ -1,6 +1,6 @@
 {
-  "request_id": "hex-campfire-post-activation-readback-20261020",
-  "mode": "operate",
+  "request_id": "captain-siege-runtime-deploy-20261022-1",
+  "mode": "deploy",
   "source_ref": "develop",
   "deploy_scope": "private"
 }
