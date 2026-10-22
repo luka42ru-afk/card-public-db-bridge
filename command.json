@@ -1,6 +1,6 @@
 {
-  "request_id": "captain-siege-v5-final-readback-20261022",
-  "mode": "operate",
+  "request_id": "friends-account-avatar-party-runtime-20261022",
+  "mode": "deploy",
   "source_ref": "develop",
   "deploy_scope": "private"
 }
