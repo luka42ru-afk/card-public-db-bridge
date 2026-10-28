@@ -1,5 +1,6 @@
 {
-  "request_id": "mining-pickaxe-validated-dynamic-tiers-20261028",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "mining-pickaxe-runtime-publish-20261028",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
