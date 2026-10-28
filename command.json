@@ -1,5 +1,6 @@
 {
-  "request_id": "logging-axe-actual-forest-route-readback-20261028",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "logging-route-live-inspection-endpoint-20261028",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
