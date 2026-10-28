@@ -1,6 +1,5 @@
 {
-  "request_id": "tix-first-dialogue-server-deploy-20261028",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "tix-first-dialogue-live-activation-20261028",
+  "mode": "operate",
+  "source_ref": "develop"
 }
