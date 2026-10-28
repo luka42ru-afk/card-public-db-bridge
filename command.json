@@ -1,6 +1,5 @@
 {
-  "request_id": "logging-axe-runtime-publish-20261028",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "logging-axe-live-before-20261028",
+  "mode": "operate",
+  "source_ref": "develop"
 }
