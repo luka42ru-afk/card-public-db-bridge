@@ -1,5 +1,6 @@
 {
-  "request_id": "held-axe-details-drop-validate-20261028",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "held-axe-details-drop-production-20261028",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
