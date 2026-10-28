@@ -1,6 +1,5 @@
 {
-  "request_id": "dice-route-25-platform-no-overlap-20261022",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "starter-tix-live-inspect-20261028",
+  "mode": "operate",
+  "source_ref": "develop"
 }
