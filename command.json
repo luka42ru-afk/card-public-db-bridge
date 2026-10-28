@@ -1,5 +1,6 @@
 {
-  "request_id": "tix-starter-contract-and-php-lint-20261028",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "tix-starter-runtime-deploy-20261028",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
