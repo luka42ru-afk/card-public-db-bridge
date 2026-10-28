@@ -1,5 +1,6 @@
 {
-  "request_id": "tix-first-dialogue-validation-fixed-contract-20261028",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "tix-first-dialogue-server-deploy-20261028",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
