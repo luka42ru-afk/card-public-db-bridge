@@ -1,6 +1,5 @@
 {
-  "request_id": "gm-skill-gallery-private-scope-deploy-20261102c",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "skill-prototype-5mb-check-20261102",
+  "mode": "operate",
+  "source_ref": "develop"
 }
