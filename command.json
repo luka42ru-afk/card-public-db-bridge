@@ -1,6 +1,5 @@
 {
-  "request_id": "pm-role-disable-schema-write-production-20261102",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "pm-role-post-deploy-live-state-verify-20261102",
+  "mode": "operate",
+  "source_ref": "develop"
 }
