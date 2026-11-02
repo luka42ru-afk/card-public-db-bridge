@@ -1,5 +1,6 @@
 {
-  "request_id": "pm-role-contract-php-js-validation-20261102",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "pm-role-users-compatible-runtime-deploy-20261102",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
