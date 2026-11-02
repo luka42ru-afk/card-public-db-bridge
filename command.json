@@ -1,5 +1,6 @@
 {
-  "request_id": "skill-prototype-5mb-check-20261102",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "skill-prototype-5mb-production-deploy-20261102",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
