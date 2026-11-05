@@ -1,5 +1,6 @@
 {
-  "request_id": "pm-role-post-deploy-live-state-verify-20261102",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "held-item-deck-cards-deploy-20261105",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
