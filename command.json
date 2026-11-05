@@ -1,6 +1,5 @@
 {
-  "request_id": "held-item-deck-cards-deploy-20261105",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "held-item-deck-cards-readonly-after-deploy-20261105",
+  "mode": "operate",
+  "source_ref": "develop"
 }
