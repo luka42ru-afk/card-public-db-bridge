@@ -1,5 +1,6 @@
 {
-  "request_id": "gm-panel-full-controls-post-deploy-readonly-20261106",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "card-finish-tool-cards-gm-gallery-deploy-20261106-a",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
