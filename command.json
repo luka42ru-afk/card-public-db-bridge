@@ -1,6 +1,5 @@
 {
-  "request_id": "bridge-20261106-ui-v78",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "bridge-20261106-readonly-restored",
+  "mode": "operate",
+  "source_ref": "develop"
 }
