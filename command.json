@@ -1,6 +1,5 @@
 {
-  "request_id": "inventory-reference-card-layout-v79-20261106",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "inventory-reference-layout-readonly-verified-20261106",
+  "mode": "operate",
+  "source_ref": "develop"
 }
