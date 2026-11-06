@@ -1,6 +1,5 @@
 {
-  "request_id": "gm-panel-full-controls-fix-20261106",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "gm-panel-full-controls-post-deploy-readonly-20261106",
+  "mode": "operate",
+  "source_ref": "develop"
 }
