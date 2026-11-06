@@ -1,5 +1,6 @@
 {
-  "request_id": "bridge-20261106-readonly-restored",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "inventory-reference-card-layout-v79-20261106",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
