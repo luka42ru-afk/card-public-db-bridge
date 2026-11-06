@@ -1,5 +1,6 @@
 {
-  "request_id": "gallery-clipboard-readonly-after-deploy-20261106",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "gallery-skill-icons-autoresolve-v80-20261106",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
