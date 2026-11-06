@@ -1,6 +1,5 @@
 {
-  "request_id": "card-skill-and-abilities-card-ui-deploy-20261106",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "card-skill-cards-postdeploy-readonly-20261106",
+  "mode": "operate",
+  "source_ref": "develop"
 }
