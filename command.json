@@ -1,5 +1,5 @@
 {
-  "request_id": "power-tier-live-verify-20261108",
+  "request_id": "tier-constellations-post-activate-default-check-20261108",
   "mode": "operate",
-  "source_ref": "bridge/power-tiers-live-operations-20261108"
+  "source_ref": "develop"
 }
