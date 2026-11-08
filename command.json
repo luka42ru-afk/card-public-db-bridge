@@ -1,5 +1,6 @@
 {
-  "request_id": "booster-dialog-final-check-20261108",
-  "mode": "operate",
-  "source_ref": "bridge/booster-modal-final-check-20261108"
+  "request_id": "booster-dialog-live-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
