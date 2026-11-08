@@ -1,5 +1,6 @@
 {
-  "request_id": "bridge-check-20261108-1906",
-  "mode": "operate",
-  "source_ref": "bridge/source-check-20261108"
+  "request_id": "bridge-publish-20261108-1913",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
