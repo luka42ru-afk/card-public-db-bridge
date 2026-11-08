@@ -1,5 +1,6 @@
 {
-  "request_id": "tier-constellations-post-activate-default-check-20261108",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "constellation-shared-sky-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
