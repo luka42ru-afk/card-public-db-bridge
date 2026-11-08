@@ -1,5 +1,6 @@
 {
-  "request_id": "tier-card-boosters-validation-2-20261108",
-  "mode": "operate",
-  "source_ref": "feature/constellation-tier-boosters-20261108"
+  "request_id": "tier-boosters-runtime-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
