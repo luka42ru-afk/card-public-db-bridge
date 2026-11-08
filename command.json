@@ -1,5 +1,5 @@
 {
-  "request_id": "constellation-player-payload-fix-readonly-verification-20261108",
+  "request_id": "standalone-constellations-pointerdrag-codecheck-20261108",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "feature/standalone-draggable-constellations-20261108"
 }
