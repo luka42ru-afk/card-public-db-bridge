@@ -1,5 +1,5 @@
 {
-  "request_id": "drop-control-live-final-verify-20261108",
+  "request_id": "bridge-check-20261108-1905",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bridge/source-check-20261108"
 }
