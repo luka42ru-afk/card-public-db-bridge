@@ -1,6 +1,5 @@
 {
-  "request_id": "inventory-spare-cards-prod-deploy-20261108",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "inventory-spare-cards-postdeploy-live-verify-20261108",
+  "mode": "operate",
+  "source_ref": "develop"
 }
