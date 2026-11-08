@@ -1,5 +1,5 @@
 {
-  "request_id": "inventory-spare-cards-validation-20261108",
+  "request_id": "inventory-spare-cards-validation-20261108-b",
   "mode": "operate",
-  "source_ref": "bridge/inventory-spare-cards-check-20261108"
+  "source_ref": "bridge/inventory-spare-cards-check2-20261108"
 }
