@@ -1,7 +1,5 @@
 {
-  "request_id": "constellation-missing-verify-live-js-20261108",
-  "mode": "inspect_ftp",
-  "inspect_path": "js",
-  "recursive": false,
-  "max_items": 1000
+  "request_id": "constellation-inventory-visible-ui-validation-20261108",
+  "mode": "operate",
+  "source_ref": "bugfix/constellation-inventory-visibility-20261108"
 }
