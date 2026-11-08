@@ -1,5 +1,5 @@
 {
-  "request_id": "inventory-spare-cards-postdeploy-live-verify-20261108",
+  "request_id": "power-tier-constellation-validation-20261108",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bridge/constellation-power-tiers-validate-20261108"
 }
