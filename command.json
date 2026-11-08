@@ -1,5 +1,6 @@
 {
-  "request_id": "cosmos-responsive-feature-validate-20261108",
-  "mode": "operate",
-  "source_ref": "bugfix/constellation-narrow-viewport-20261108"
+  "request_id": "card-ui-responsive-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
