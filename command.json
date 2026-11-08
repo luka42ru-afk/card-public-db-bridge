@@ -1,5 +1,5 @@
 {
-  "request_id": "constellation-visibility-runtime-probe-20261108",
+  "request_id": "constellation-player-payload-code-check-20261108",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/constellation-inventory-player-payload-20261108"
 }
