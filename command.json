@@ -1,5 +1,5 @@
 {
-  "request_id": "booster-dialog-postdeploy-live-readonly-20261108",
+  "request_id": "inventory-spare-cards-validation-20261108",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bridge/inventory-spare-cards-check-20261108"
 }
