@@ -1,5 +1,6 @@
 {
-  "request_id": "inventory-spare-cards-validation-20261108-c",
-  "mode": "operate",
-  "source_ref": "bridge/inventory-spare-cards-check2-20261108"
+  "request_id": "inventory-spare-cards-prod-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
