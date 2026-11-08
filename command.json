@@ -1,5 +1,5 @@
 {
-  "request_id": "constellation-shared-sky-post-deploy-readonly-20261108",
+  "request_id": "stardust-forging-isolated-validation-20261108",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "feature/constellation-stardust-forging-20261108"
 }
