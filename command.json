@@ -1,5 +1,6 @@
 {
-  "request_id": "constellation-player-payload-code-check-20261108",
-  "mode": "operate",
-  "source_ref": "bugfix/constellation-inventory-player-payload-20261108"
+  "request_id": "constellation-player-payload-fix-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
