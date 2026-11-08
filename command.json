@@ -1,6 +1,5 @@
 {
-  "request_id": "tier-constellations-runtime-deploy-20261108",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "power-tier-db-before-20261108",
+  "mode": "operate",
+  "source_ref": "bridge/power-tiers-live-operations-20261108"
 }
