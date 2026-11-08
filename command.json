@@ -1,5 +1,6 @@
 {
-  "request_id": "tier-constellation-test2-20261108",
-  "mode": "operate",
-  "source_ref": "bridge/constellation-power-tiers-validate2-20261108"
+  "request_id": "tier-constellations-runtime-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
