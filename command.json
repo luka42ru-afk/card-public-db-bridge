@@ -1,6 +1,5 @@
 {
-  "request_id": "card-feature-runtime-delivery-20261108",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "card-readonly-preflight-20261108",
+  "mode": "operate",
+  "source_ref": "develop"
 }
