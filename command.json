@@ -1,5 +1,5 @@
 {
-  "request_id": "tier-boosters-live-readback-verify-20261108",
+  "request_id": "drop-controls-gm-source-validation-20261108",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/drop-source-controls-gm-20261108"
 }
