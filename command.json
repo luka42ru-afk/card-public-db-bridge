@@ -1,5 +1,6 @@
 {
-  "request_id": "constellation-v1-final-preflight-html-fix-20261108",
-  "mode": "operate",
-  "source_ref": "feature/three-star-constellation-cards-20261108"
+  "request_id": "constellations-v1-compatible-runtime-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
