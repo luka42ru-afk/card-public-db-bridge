@@ -1,6 +1,5 @@
 {
-  "request_id": "bridge-publish-20261108-1913",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "bridge-post-publish-verification-20261108",
+  "mode": "operate",
+  "source_ref": "develop"
 }
