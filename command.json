@@ -1,6 +1,5 @@
 {
-  "request_id": "drop-controls-gm-runtime-publish-20261108",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "drop-controls-live-preflight-20261108",
+  "mode": "operate",
+  "source_ref": "develop"
 }
