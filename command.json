@@ -1,5 +1,6 @@
 {
-  "request_id": "constellation-inventory-visible-ui-validation-20261108",
-  "mode": "operate",
-  "source_ref": "bugfix/constellation-inventory-visibility-20261108"
+  "request_id": "constellations-inventory-visible-deploy-20261108",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
