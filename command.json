@@ -1,6 +1,5 @@
 {
-  "request_id": "booster-dialog-live-deploy-20261108",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "booster-dialog-postdeploy-live-readonly-20261108",
+  "mode": "operate",
+  "source_ref": "develop"
 }
