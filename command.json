@@ -1,5 +1,6 @@
 {
-  "request_id": "single-armor-star-all-contracts-20261110",
-  "mode": "operate",
-  "source_ref": "bugfix/constellation-single-armor-star-20261110"
+  "request_id": "single-armor-star-compatible-deploy-20261110",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
