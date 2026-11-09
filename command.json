@@ -1,5 +1,6 @@
 {
-  "request_id": "single-armor-star-readonly-restoration-20261110",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "constellation-only-equipment-retirement-20261110",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
