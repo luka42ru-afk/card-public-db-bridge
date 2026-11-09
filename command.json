@@ -1,5 +1,6 @@
 {
-  "request_id": "constellation-ui-loader-validate-20261109",
-  "mode": "operate",
-  "source_ref": "bugfix/constellation-script-injection-20261109"
+  "request_id": "card-script-loader-hotfix-deploy-20261109",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
