@@ -1,5 +1,5 @@
 {
-  "request_id": "mobile-card-scale-targeted-recheck-20261109",
+  "request_id": "card-scale-isolated-tests-20261109",
   "mode": "operate",
   "source_ref": "bugfix/fixed-scene-card-mobile-scaling-20261109"
 }
