@@ -1,6 +1,5 @@
 {
-  "request_id": "ingot-armor-stars-compatible-code-deploy-20261109",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "ingot-armor-full-regression-20261109",
+  "mode": "operate",
+  "source_ref": "develop"
 }
