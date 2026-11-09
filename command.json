@@ -1,6 +1,5 @@
 {
-  "request_id": "card-single-pass-game-scale-deploy-20261109",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "mobile-scene-card-scaling-readonly-restore-20261109",
+  "mode": "operate",
+  "source_ref": "develop"
 }
