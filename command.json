@@ -1,6 +1,5 @@
 {
-  "request_id": "card-script-loader-hotfix-deploy-20261109",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "constellation-loader-hotfix-readonly-20261109",
+  "mode": "operate",
+  "source_ref": "develop"
 }
