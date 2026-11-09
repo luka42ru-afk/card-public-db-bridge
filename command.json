@@ -1,6 +1,5 @@
 {
-  "request_id": "single-armor-star-compatible-deploy-20261110",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "single-armor-precleanup-inspect-20261110",
+  "mode": "operate",
+  "source_ref": "develop"
 }
