@@ -1,6 +1,5 @@
 {
-  "request_id": "power-star-shards-compatible-runtime-deploy-20261109",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "power-star-schema-live-migration-20261109",
+  "mode": "operate",
+  "source_ref": "develop"
 }
