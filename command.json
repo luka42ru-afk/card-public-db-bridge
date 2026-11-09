@@ -1,5 +1,5 @@
 {
-  "request_id": "power-star-independent-production-check-20261109",
+  "request_id": "one-armor-star-feature-test-20261110",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/constellation-single-armor-star-20261110"
 }
