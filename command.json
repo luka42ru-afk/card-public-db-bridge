@@ -1,5 +1,6 @@
 {
-  "request_id": "mobile-card-scene-focused-verify-20261109",
-  "mode": "operate",
-  "source_ref": "bugfix/fixed-scene-card-mobile-scaling-20261109"
+  "request_id": "card-single-pass-game-scale-deploy-20261109",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
