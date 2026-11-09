@@ -1,5 +1,5 @@
 {
-  "request_id": "constellation-responsive-safe-readonly-20261108",
+  "request_id": "constellation-ui-loader-validate-20261109",
   "mode": "operate",
-  "source_ref": "develop"
+  "source_ref": "bugfix/constellation-script-injection-20261109"
 }
