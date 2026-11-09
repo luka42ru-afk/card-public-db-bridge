@@ -1,5 +1,5 @@
 {
-  "request_id": "constellation-only-equipment-retirement-20261110",
+  "request_id": "constellation-only-retire-reroll-drops-20261110",
   "mode": "deploy",
   "source_ref": "develop",
   "deploy_scope": "private"
