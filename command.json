@@ -1,5 +1,5 @@
 {
-  "request_id": "power-star-compat-regressions-20261109",
+  "request_id": "power-star-compat-recheck-20261109",
   "mode": "operate",
   "source_ref": "feature/constellation-power-stars-soul-shards-20261109"
 }
