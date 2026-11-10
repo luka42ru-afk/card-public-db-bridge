@@ -1,5 +1,6 @@
 {
-  "request_id": "validate-source-20261111-f202",
-  "mode": "operate",
-  "source_ref": "82a608b298e72ab6f6b336ea2b34f1ff105c4505"
+  "request_id": "publish-runtime-20261111-f203",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
