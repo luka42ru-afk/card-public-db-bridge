@@ -1,5 +1,6 @@
 {
-  "request_id": "private-validation-20261110-r3",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "private-release-20261110-r4",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
