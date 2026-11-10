@@ -1,6 +1,5 @@
 {
-  "request_id": "publish-runtime-20261111-f101",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "inspect-state-20261111-f201",
+  "mode": "operate",
+  "source_ref": "46250f3ed28f9d16a0dae71fb24997b061f980de"
 }
