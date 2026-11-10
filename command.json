@@ -1,5 +1,6 @@
 {
-  "request_id": "inspection-20261110-e",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "delivery-20261110-f",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
