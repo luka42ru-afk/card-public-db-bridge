@@ -1,5 +1,6 @@
 {
-  "request_id": "private-sequential-60-validation-20261110-v5",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "private-sequential-60-production-deploy-20261110-v1",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
