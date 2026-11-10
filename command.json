@@ -1,6 +1,5 @@
 {
-  "request_id": "private-release-20261110-soul-center-v1",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "soul-crystal-center-postdeploy-readonly-20261110",
+  "mode": "operate",
+  "source_ref": "develop"
 }
