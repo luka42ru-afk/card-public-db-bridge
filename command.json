@@ -1,6 +1,5 @@
 {
-  "request_id": "source-publish-20261110-cd06",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "config-apply-20261110-cd07",
+  "mode": "operate",
+  "source_ref": "develop"
 }
