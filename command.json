@@ -1,5 +1,6 @@
 {
-  "request_id": "constellation-only-postdeploy-readonly-20261110",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "constellation-reroll-shards-deploy-20261110-v1",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
