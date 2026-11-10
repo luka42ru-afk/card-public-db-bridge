@@ -1,5 +1,6 @@
 {
-  "request_id": "source-check-20261110-6b43",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "source-publish-20261110-6b43",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
