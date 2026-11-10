@@ -1,5 +1,6 @@
 {
-  "request_id": "verify-config-20261110-e106",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "publish-runtime-20261111-f101",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
