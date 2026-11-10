@@ -1,5 +1,6 @@
 {
-  "request_id": "private-inventory-tile-validation-20261110-a",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "private-inventory-tile-deploy-20261110-b",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
