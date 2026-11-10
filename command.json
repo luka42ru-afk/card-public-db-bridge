@@ -1,5 +1,6 @@
 {
-  "request_id": "operation-20261110-b",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "delivery-20261110-c",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
