@@ -1,6 +1,5 @@
 {
-  "request_id": "publish-runtime-20261110-e104",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "apply-config-20261110-e105",
+  "mode": "operate",
+  "source_ref": "develop"
 }
