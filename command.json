@@ -1,6 +1,5 @@
 {
-  "request_id": "private-sequential-60-production-deploy-20261110-v1",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "sequential-60-postdeploy-readonly-20261110",
+  "mode": "operate",
+  "source_ref": "develop"
 }
