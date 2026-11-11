@@ -1,5 +1,6 @@
 {
-  "request_id": "verify-state-20261111-f205",
-  "mode": "operate",
-  "source_ref": "develop"
+  "request_id": "publish-runtime-20261111-f206",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
