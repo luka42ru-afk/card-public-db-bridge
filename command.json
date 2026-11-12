@@ -1,5 +1,6 @@
 {
-  "request_id": "inspect-runtime-20261112-g243",
-  "mode": "operate",
-  "source_ref": "989d2453437074b9f2ae1e2dae9764cf7fb51ed6"
+  "request_id": "deploy-runtime-20261112-g244",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
