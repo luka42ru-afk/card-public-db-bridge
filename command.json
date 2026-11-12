@@ -1,5 +1,6 @@
 {
-  "request_id": "validate-runtime-20261112-g212",
-  "mode": "operate",
-  "source_ref": "e1776e97d80d0061fb40463b1b59a7042f3aafc0"
+  "request_id": "publish-runtime-20261112-g213",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
