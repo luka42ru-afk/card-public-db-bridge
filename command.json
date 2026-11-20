@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-runtime-20261120-03",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "operate-runtime-20261120-04",
+  "mode": "operate",
+  "source_ref": "73f3bbffd069cfac1e545c5be4a8bbdd4d2fd044"
 }
