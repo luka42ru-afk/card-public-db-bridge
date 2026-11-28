@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-update-20261128-26",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "operate-update-20261128-27",
+  "mode": "operate",
+  "source_ref": "79eaa8ea40885d8c7bcbf213e014ea6e3c282735"
 }
