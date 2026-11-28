@@ -1,6 +1,5 @@
 {
-  "request_id": "deploy-update-1795881138406",
-  "mode": "deploy",
-  "source_ref": "develop",
-  "deploy_scope": "private"
+  "request_id": "validate-update-1795883189495",
+  "mode": "operate",
+  "source_ref": "4ab8ca242b0b21ab2578055c3c7f0d0a5f6ba424"
 }
