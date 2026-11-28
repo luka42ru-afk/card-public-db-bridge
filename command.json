@@ -1,5 +1,6 @@
 {
-  "request_id": "operate-verify-1795867996236",
-  "mode": "operate",
-  "source_ref": "f3844be906ed879e82259137278bb2c183d0a02c"
+  "request_id": "deploy-update-1795868083178",
+  "mode": "deploy",
+  "source_ref": "develop",
+  "deploy_scope": "private"
 }
